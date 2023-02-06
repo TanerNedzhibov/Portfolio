@@ -1,0 +1,47 @@
+.pageContainer{
+    margin-left: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:baseline;
+}
+.pageContainer img{
+    width: 70px;
+    height: 70px;
+}
+.skillsCard1{
+    margin-top: 40px;
+}
+
+.skillsContainer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 25px;
+    grid-row-gap: 50px;
+}
+.skillsContainer div{
+    background: linear-gradient(rgba(255, 255, 255, 0.136), rgba(0, 0, 0, 0.13));
+    border-radius: 30%;
+}
+.skillsContainer img:hover{
+    animation: logoAnimation;
+    animation-duration: 0.4s;
+}
+.skillsContainer h5{
+    margin-top: -3px;
+    font-size: 15px;
+}
+.skillsContainer h6{
+    margin-top: -25px;
+    font-size: 10px;
+}
+@keyframes logoAnimation {
+    25%{transform: translateY(-5px);}
+    50%{transform: translateY(5px);}
+    75%{transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}

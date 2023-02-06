@@ -1,0 +1,108 @@
+
+.navBar{
+    margin: 0px;
+    background: linear-gradient(#484848, black);
+    margin-top: -16px auto;
+    width: 100vw;
+    height: 60px;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 1px 40px;
+}
+.navBar li{
+    display:inline-block;
+    padding-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+.navBar ul{
+    margin-right: 5%;
+}
+.navBar li :hover{
+    letter-spacing: 5px;
+    color: silver;
+    transition:0.5s ease-in-out;
+  
+}
+.homePageContainer{
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+.homePageProfile{
+    width: auto;
+    height: 350px;
+    border-radius: 30% 30% 5% 5%;
+}
+.profilePicContainer{
+    margin-left: 30px;
+    width: 335px;
+    height: 350px;
+    background: linear-gradient(#e0e0e09d, rgba(59, 62, 86, 0.71));
+    border: 2px solid;
+    border-color: black;
+    border-radius: 20%;
+}
+.homePageButtons{
+    display: flex;
+    flex-direction: column;
+}
+.homePageButtons a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.letsTalkBtn, .downloadBtn{
+    border-radius: 7px;
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(#393939,rgb(0, 0, 0));
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.letsTalkBtn text{
+    justify-content: center;
+}
+.letsTalkBtn:hover, .downloadBtn:hover{
+    background: linear-gradient(#605f5f,rgb(19, 19, 19));
+    transition: 3s ease-in-out;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    flex-shrink: 5;
+}
+.socialMedia a {
+    cursor: pointer;
+    padding: 2px;
+    transition: 0.5s ease-in-out;
+    color: black;
+}
+.socialMedia a:hover {
+    transform: scale(1.2);
+}
+    
+.pageDecoration{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    top: 130px;
+    right: 470px;
+    opacity: 0.1;
+}
+#decorImg2{
+    position: absolute;
+    left: -200px;
+}

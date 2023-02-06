@@ -1,0 +1,96 @@
+.projectsPageContainer{
+    margin-left: 5%;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+.projectSliderContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.projectSlider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.slide{
+    width: 400px;
+    height: auto;
+}
+.slide img{
+    width: 380px;
+    height: 230px;
+    border-radius: 10px;
+}
+.slide p{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+}
+.slideBtn{
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    background: linear-gradient(#393939,rgb(0, 0, 0));
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.slideBtn:hover{
+    background: linear-gradient(#605f5f,rgb(19, 19, 19));
+}
+.skipButtons button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: black;
+}
+.dotContainer{
+    display: flex;
+    flex: row;
+    gap: 10px;
+   
+}
+.dotNotActive{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.601);
+    cursor: pointer;
+}
+.dotActive{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+.slideMainContainer{
+    width: 800px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.slidingItem0{
+    position: relative;
+    right: 0px;
+    transition: all 1s ease;
+   
+}
+.slidingItem1{
+    position: relative;
+    right: 400px;
+    transition: all 1s ease;
+}
+.slidingItem2{
+    position: relative;
+    right: 800px;
+    transition: all 1s ease;
+}
