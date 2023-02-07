@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import ImgContainer from '../../Components/ImgContainer'
+import React from 'react'
 import ProjectSlider from '../../Components/ProjectSlider'
-import Test from '../../Components/Test'
 import './Projects.css'
 
 const Projects = () => {

@@ -8,13 +8,13 @@ const ContactCard = ({type, contactLink, refSend}) => {
 
     let getIcon = "";
 
-    if(type == "Email" || type == "email"){
+    if(type === "Email" || type === "email"){
         getIcon = <EmailIcon/>
     }
-    else if(type == "WhatsApp" || type == "Whats App" || type == "whatsapp" || type == "whats app"){
+    else if(type === "WhatsApp" || type === "Whats App" || type === "whatsapp" || type === "whats app"){
         getIcon = <WhatsAppIcon />
     }
-    else if(type == "Phone" || type == "phone"){
+    else if(type === "Phone" || type === "phone"){
         getIcon = <PhoneIphoneIcon />
     }
     else{
