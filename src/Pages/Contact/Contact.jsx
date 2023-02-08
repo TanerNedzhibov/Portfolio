@@ -13,7 +13,6 @@ const Contact = () => {
   })
 
   const form = useRef();
-  const sendMessage = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -34,12 +33,12 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className='contactPageContainer'>
         <div className='ContactCardsMainContainer'>
-          <ContactCard type="Email" contactLink="tanernedzhibov@gmail.com" refSend={sendMessage}/>
-          <ContactCard type="WhatsApp" contactLink="+359 896579265" refSend={sendMessage}/>
+          <ContactCard type="Email" contactLink="tanernedzhibov@gmail.com"/>
+          <ContactCard type="WhatsApp" contactLink="+359 896579265"/>
         </div>
         <div className='formContainer'>
-          <form onSubmit={handleSubmit}>
-            <input ref={sendMessage} id='fullName' className='inputArea' 
+          <form onSubmit={handleSubmit} ref={form}>
+            <input id='fullName' className='inputArea' 
                   required
                   type="text" 
                   name="user_name"

@@ -26,7 +26,7 @@ const Home = () => {
           <Link to="contactPage" spy={true} smooth={true} offset={-100} duration={1300}><EmailIcon fontSize='small'  /></Link>
         </div>
         <div className='profilePicContainer'>
-          <img className='homePageProfile' src={profilePic}></img>
+          <img className='homePageProfile' alt='' src={profilePic}></img>
           <p>{helloText}</p>
         </div>
         <div className='homePageButtons'>

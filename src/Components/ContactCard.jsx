@@ -3,7 +3,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 
-const ContactCard = ({type, contactLink, refSend}) => {
+const ContactCard = ({type, contactLink}) => {
 
 
     let getIcon = "";
